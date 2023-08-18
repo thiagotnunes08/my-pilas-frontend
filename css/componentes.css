@@ -2,6 +2,7 @@
         PLANO
 \*--------------------*/
 .plano {
+    position: relative;
     padding: 10px;
     border: 1px solid #95a4a5;
     font-size:1.4rem;
@@ -37,6 +38,23 @@
 
     .plano__rodape{
         text-align: center;
+    }
+
+    .plano--mais--popular::after{
+      background-color: #c20302;
+      color: #fff;
+
+      content: "MAIS POPULAR";
+
+      padding: 0 10px;
+
+      position: absolute;
+      top: -10px;
+      left:-10px;
+
+      font-size: 0.7142em;
+      line-height: 2.5;
+
     }
 
 /*--------------------*\
@@ -111,7 +129,7 @@
     }
 
     @media(min-width: 992px){
-    .chamada{
+    .chamada {
     padding-left: 10%;
     padding-right: 10%;
 
@@ -119,5 +137,70 @@
 
     }
 
- }
+    }
+
+        /*--------------------*\
+                DEPOIMENTO
+        \*--------------------*/
+
+
+      @media(min-width: 992px){
+
+      .depoimento {
+
+          padding-left: 15%;
+          padding-right: 15%;
+          font-size: 2.8rem;
+         }
+      }
+
+     .depoimento{
+     font-size: 2.2rem;
+
+     }
+
+     .depoimento > blockquote {
+     position: relative;
+     margin: 0;
+     padding: 0 60px;
+
+     text-align: center;
+     font-size: 1em;
+
+     }
+
+     .depoimento > blockquote::before {
+
+        position: absolute;
+        left:0;
+        top: -0.35em; /* 176/62px = 0.3522 */
+
+         color:#ccc;
+        content: "\201C";
+        font-size:8em; /* 176px */
+       }
+
+     .depoimento__autor {
+       margin-top: 40px;
+
+      text-align: center;
+      font-size: 0.7272em;
+
+     }
+
+     .depoimento__autor > img {
+
+     text-align: center;
+     border-radius: 50%;
+
+     }
+
+     .depoimento__autor > p {
+
+     margin-top: 10px;
+
+     }
+
+
+
 
