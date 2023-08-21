@@ -242,37 +242,58 @@
          MENU
       \*--------------------*/
 
-      .menu {
+     .menu {
+       margin: 0;
 
-        position: fixed;
-        top:0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+       font-size: 1.4rem;
 
-        width: 200px;
-        margin: 0;
-        border-right: 1px solid #eee;
-        padding: 20px
+       list-style: none;
+     }
 
-        font-size: 1.4rem;
+     @media(max-width: 991px) {
 
-        background-color: #fbfbfb;
+       .menu {
+         position: fixed;
+         top: 0;
+         left: 0;
+         bottom: 0;
 
-        list-style: none;
+         width: 200px;
+         padding: 20px;
+         border-right: 1px solid #eee;
+
+         background-color: #fbfbfb;
+       }
+
+       .menu__item {
+         display: block;
+
+         line-height: 3;
+       }
+
+       .menu__item--botao {
+         margin-top: 20px;
+       }
+
+     }
+
+     @media(min-width: 992px) {
+
+       .menu__item {
+         display: inline-block;
+         padding-right: 20px;
+       }
+
+       .menu__item:last-of-type {
+         padding-right: 0px;
+       }
+
+     }
 
 
-      }
 
-      .menu__item {
-      display: block;
-      line-height: 3;
 
-      }
 
-      .menu__item__botao{
-      margin-top:20px;
-      }
 
 
 
