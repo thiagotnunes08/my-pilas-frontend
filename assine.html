@@ -27,7 +27,7 @@
 <main class="layout-assinatura">
     <div class="container">
 
-        <form action="#" method="post">
+        <form id="cadastro-form">
             <h1 class="titulo-formulario">Sua assinatura do MyPilas</h1>
 
             <div class="grupo-entrada">
@@ -57,7 +57,7 @@
 
             <div class="grupo-entrada">
                 <label for="email">E-mail</label>
-                <input id="email" type="email" class="campo" required>
+                <input id="email" name="email" type="email" class="campo" required>
             </div>
 
             <div class="row">
@@ -72,10 +72,11 @@
                         </select>
                     </div>
                 </div>
+
                 <div class="col-sm-3">
                     <div class="grupo-entrada">
                         <label for="cidade">Cidade</label>
-                        <select id="cidade" class="campo">
+                        <select id="cidade" name="cidade" class="campo">
                             <option>Selecione</option>
                             <option value="1">Uberlândia</option>
                             <option value="2">São Paulo</option>
@@ -89,13 +90,13 @@
                 <div class="col-sm-3">
                     <div class="grupo-entrada">
                         <label for="senha">Senha</label>
-                        <input id="senha" type="password" class="campo" required>
+                        <input id="senha" name="senha" type="password" class="campo" required>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="grupo-entrada">
                         <label for="confirmacao-senha">Confirme a senha</label>
-                        <input id="confirmacao-senha" type="password" class="campo" required>
+                        <input id="confirmacao-senha" name="senha" type="password" class="campo" required>
                     </div>
                 </div>
             </div>
@@ -115,5 +116,7 @@
 </footer>
 
 </body>
+
+<script src="javascript/requisicoes.js"></script>
 
 </html>

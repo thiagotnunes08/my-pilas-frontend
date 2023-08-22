@@ -208,7 +208,9 @@
             NAVEGAÇÃO
       \*--------------------*/
 
-      .navegacao{
+      .navegacao--assinatura{
+
+      text-align: center;
 
       }
     .navegao__menu{
